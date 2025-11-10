@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'MAVEN_HOME'   // Make sure Maven is configured in Jenkins (Manage Jenkins → Tools)
-        jdk 'JAVA_HOME'       // Optional: If you’ve configured a specific JDK
-    }
-
     stages {
         stage('Checkout') {
             steps {
